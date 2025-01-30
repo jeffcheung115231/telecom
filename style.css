@@ -1,0 +1,54 @@
+/* 通用樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #0078d4;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #005a9c;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #004080;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #005a9c;
+}
+
+footer {
+    background: #005a9c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
