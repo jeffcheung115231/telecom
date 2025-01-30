@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>香港電信商營銷聯盟</title>
+    <title>香港電信商營銷聯盟 - 首頁</title>
     <style>
         /* 基本樣式 */
         * {
@@ -51,16 +51,6 @@
             margin: 2rem auto;
         }
 
-        section {
-            margin-bottom: 2rem;
-        }
-
-        h2 {
-            color: #005a9c;
-            margin-bottom: 1rem;
-        }
-
-        /* 頁面內容樣式 */
         .hero {
             background: #e6f7ff;
             padding: 2rem;
@@ -77,33 +67,6 @@
             font-size: 1.2rem;
         }
 
-        .services, .partners {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        .card {
-            background: #f4f4f4;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 1rem;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            max-width: 100%;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-        }
-
         footer {
             background: #005a9c;
             color: #fff;
@@ -114,17 +77,6 @@
 
         footer p {
             margin: 0.5rem 0;
-        }
-
-        /* 響應式設計 */
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                padding: 0.5rem;
-            }
         }
     </style>
 </head>
@@ -137,82 +89,18 @@
 
     <!-- 導航欄 -->
     <nav>
-        <a href="#home">首頁</a>
-        <a href="#services">服務介紹</a>
-        <a href="#partners">合作夥伴</a>
-        <a href="#contact">聯絡我們</a>
+        <a href="index.html">首頁</a>
+        <a href="services.html">服務介紹</a>
+        <a href="partners.html">合作夥伴</a>
+        <a href="contact.html">聯絡我們</a>
+        <a href="about.html">關於我們</a>
     </nav>
 
     <!-- 主內容 -->
     <div class="container">
-        <!-- 首頁 -->
-        <section id="home" class="hero">
+        <section class="hero">
             <h2>歡迎來到香港電信商營銷聯盟</h2>
             <p>我們致力於為合作夥伴提供卓越的電信服務和營銷支持。</p>
-        </section>
-
-        <!-- 服務介紹 -->
-        <section id="services">
-            <h2>我們的服務</h2>
-            <div class="services">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="服務 1">
-                    <h3>高速互聯網</h3>
-                    <p>提供穩定高效的網絡連接，滿足商業需求。</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="服務 2">
-                    <h3>流動通訊方案</h3>
-                    <p>靈活的流動通訊計劃，讓您的業務隨時隨地保持聯繫。</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="服務 3">
-                    <h3>雲端解決方案</h3>
-                    <p>安全可靠的雲端服務，助您輕鬆管理資料。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 合作夥伴 -->
-        <section id="partners">
-            <h2>合作夥伴</h2>
-            <div class="partners">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="夥伴 1">
-                    <h3>Partner A</h3>
-                    <p>專注於企業網絡建設的頂尖公司。</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="夥伴 2">
-                    <h3>Partner B</h3>
-                    <p>提供創新流動設備及服務的夥伴。</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="夥伴 3">
-                    <h3>Partner C</h3>
-                    <p>領先的雲端技術服務供應商。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 聯絡我們 -->
-        <section id="contact">
-            <h2>聯絡我們</h2>
-            <form id="contact-form">
-                <div>
-                    <label for="name">姓名：</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div>
-                    <label for="email">電郵：</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div>
-                    <label for="message">留言：</label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">提交</button>
-            </form>
         </section>
     </div>
 
@@ -221,13 +109,5 @@
         <p>&copy; 2025 香港電信商營銷聯盟. 版權所有。</p>
         <p>聯絡電郵：info@telecom.hk</p>
     </footer>
-
-    <script>
-        // 表單提交處理
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('感謝您的聯絡！我們將盡快回覆您。');
-        });
-    </script>
 </body>
 </html>
